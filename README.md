@@ -1,6 +1,12 @@
 # FlowerShop-Management-System
 This is our Final Project for Data Structure 
 
+Video Demonstration Link: 
+https://youtu.be/Az4uy1vHpgE
+
+Presentation Link: 
+https://www.canva.com/design/DAFloEGyFjs/7-pyG-LbH7UQS0oEWLhPyg/edit?utm_content=DAFloEGyFjs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 # Team Member: 
 - Vania Agnes Djunaedy 2602158531
 - Jessica Angela Huang 2602213031

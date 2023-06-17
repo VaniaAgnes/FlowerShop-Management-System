@@ -64,7 +64,7 @@ public class BenchmarkDS {
                     System.out.println("\nArray List: ");
                     arrayStart = System.nanoTime();
 
-                    for (int i = 0; i < x || x <= flowerCount; i++) {
+                    for (int i = 0; i < x && x <= flowerCount; i++) {
                         arrayList.inputFlower(flowerName[i], price[i], quantity[i]);
                     }
 
@@ -75,7 +75,7 @@ public class BenchmarkDS {
                     System.out.println("\nStack: ");
                     stackStart = System.nanoTime();
 
-                    for (int j = 0; j < x || x <= flowerCount; j++) {
+                    for (int j = 0; j < x && x <= flowerCount; j++) {
                         stack.inputFlower(flowerName[j], price[j], quantity[j]);
                     }
 
@@ -86,7 +86,7 @@ public class BenchmarkDS {
                     System.out.println("\nTree Map: ");
                     tmStart = System.nanoTime();
 
-                    for (int j = 0; j < x || x <= flowerCount; j++) {
+                    for (int j = 0; j < x && x <= flowerCount; j++) {
                         tm.inputFlower(flowerName[j], price[j], quantity[j]);
                     }
 
@@ -97,7 +97,7 @@ public class BenchmarkDS {
                     System.out.println("\nLinked List: ");
                     llStart = System.nanoTime();
 
-                    for (int j = 0; j < x || x <= flowerCount; j++) {
+                    for (int j = 0; j < x && x <= flowerCount; j++) {
                         ll.inputFlower(flowerName[j], price[j], quantity[j]);
                     }
 
@@ -115,7 +115,7 @@ public class BenchmarkDS {
                     // ArrayList
                     System.out.println("\nArray List: ");
                     arrayStart = System.nanoTime();
-                    for (int i = 0; i < x || x <= flowerCount; i++) {
+                    for (int i = 0; i < x && x <= flowerCount; i++) {
                         arrayList.updateFlowerDetails("Rose", 98, 7);
                     }
                     arrayEnd = System.nanoTime();
@@ -124,7 +124,7 @@ public class BenchmarkDS {
                     // Stack
                     System.out.println("\nStack: ");
                     stackStart = System.nanoTime();
-                    for (int i = 0; i < x || x <= flowerCount; i++) {
+                    for (int i = 0; i < x && x <= flowerCount; i++) {
                         stack.updateFlowerDetails("Rose", 98, 7);
                     }
                     stackEnd = System.nanoTime();
@@ -133,7 +133,7 @@ public class BenchmarkDS {
                     // TreeMap
                     System.out.println("\nTreeMap: ");
                     tmStart = System.nanoTime();
-                    for (int i = 0; i < x || x <= flowerCount; i++) {
+                    for (int i = 0; i < x && x <= flowerCount; i++) {
                         tm.updateFlowerDetails("Rose", 98, 7);
 
                     }
@@ -143,7 +143,7 @@ public class BenchmarkDS {
                     // LinkedList
                     System.out.println("\nLinkedList: ");
                     llStart = System.nanoTime();
-                    for (int i = 0; i < x || x <= flowerCount; i++) {
+                    for (int i = 0; i < x && x <= flowerCount; i++) {
                         ll.updateFlowerDetails("Rose", 98, 7);
                     }
                     llEnd = System.nanoTime();
@@ -161,7 +161,7 @@ public class BenchmarkDS {
                     System.out.println("\nArray List: ");
                     arrayStart = System.nanoTime();
 
-                    for (int i = 0; i < x || x <= flowerCount; i++) {
+                    for (int i = 0; i < x && x <= flowerCount; i++) {
                         arrayList.removeFlower(flowerName[i]);
                     }
 
@@ -172,7 +172,7 @@ public class BenchmarkDS {
                     System.out.println("\nStack: ");
                     stackStart = System.nanoTime();
 
-                    for (int i = 0; i < x || x <= flowerCount; i++) {
+                    for (int i = 0; i < x && x <= flowerCount; i++) {
                         stack.removeFlower(flowerName[i]);
                     }
 
@@ -183,7 +183,7 @@ public class BenchmarkDS {
                     System.out.println("\nTreeMap: ");
                     tmStart = System.nanoTime();
 
-                    for (int i = 0; i < x || x <= flowerCount; i++) {
+                    for (int i = 0; i < x && x <= flowerCount; i++) {
                         tm.removeFlower(flowerName[i]);
                     }
 
@@ -194,7 +194,7 @@ public class BenchmarkDS {
                     System.out.println("\nLinked List: ");
                     llStart = System.nanoTime();
 
-                    for (int i = 0; i < x || x <= flowerCount; i++) {
+                    for (int i = 0; i < x && x <= flowerCount; i++) {
                         ll.removeFlower(flowerName[i]);
                     }
 
@@ -254,7 +254,7 @@ public class BenchmarkDS {
 
     public static void flowerRead() {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("C:/Users/vania/University/Data Structures/Flower Shop System/src/FlowerData.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("src/FlowerData.txt"));
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split(";");
